@@ -1,0 +1,14 @@
+@page { size: 16in 9in landscape; margin: 0; }
+@media print {
+  html, body { width: auto; height: auto; overflow: visible; background: white !important; }
+  .stage { position: static; background: white !important; }
+  .slide { position: relative !important; display: block !important; width: 100vw; height: 100vh; page-break-after: always; break-after: page; overflow: hidden !important; background: white !important; color: #0B2239 !important; }
+  .slide::before { opacity: .18; }
+  .slide-safe { height: 88vh; }
+  .controls, .top-progress, .presenter-frame, .start-screen, .overview, .notes-panel, .modal, .tooltip, .orientation-notice { display: none !important; }
+  .appendix, .slide { color: #0B2239 !important; }
+  .section-label, .eyebrow { color: #C97B18 !important; }
+  .chart-panel.large, .score, .doc-callout, .table-wrap, .matrix-wrap { box-shadow: none !important; }
+  th { background: #123A5A !important; color: #fff !important; }
+  .slide::after { content: attr(data-slide) " / 34"; position: absolute; bottom: 14px; left: 22px; font-size: 14px; color: #87939D; }
+}

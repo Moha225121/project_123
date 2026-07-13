@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تأثير مصدر الركام الخشن على مقاومة الخرسانة للانضغاط</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/slides.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body class="theme-dark">
+  <div class="orientation-notice">لأفضل تجربة عرض، استخدم الجهاز بالوضع الأفقي.</div>
+  <div class="top-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <main class="stage" id="deck" aria-live="polite">
+    <section class="slide slide-cover" data-title="الغلاف" data-section="المقدمة" data-slide="1">
+      <div class="slide-safe cover-layout">
+        <div class="cover-media">
+          <span class="giant-number">01</span>
+          <div class="logo-panel" id="logoPanel" aria-label="شعار المؤسسة"></div>
+          <img src="assets/images/image10.jpeg" alt="صورة مختبرية من مشروع التخرج" data-fallback="مختبر الخرسانة">
+        </div>
+        <div class="cover-copy">
+          <p class="eyebrow">CIVIL ENGINEERING RESEARCH</p>
+          <h1 class="cover-title" data-config="title">تأثير مصدر الركام الخشن على مقاومة الخرسانة للانضغاط</h1>
+          <div class="draw-line"></div>
+          <p class="students" id="coverStudents"></p>
+          <dl class="cover-meta" id="coverMeta"></dl>
+          <p class="verify-note">ملاحظة: راجع بيانات الجامعة والمشرف قبل العرض النهائي.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide-overview" data-title="المقدمة" data-section="المقدمة" data-slide="2">
+      <div class="slide-safe intro-reference-layout">
+        <div class="gradient-text-panel intro-panel">
+          <p>تعتبر الخرسانة في الوقت الحالي مادة البناء الأساسية لتنفيذ المباني والمنشآت المختلفة، وذلك بسبب المزايا التي تتميز بها الخرسانة وتوفر مكوناتها الأساسية وقلة تكلفتها مقارنة مع المواد الإنشائية الأخرى.</p>
+          <p>وحيث إن الخرسانة خليط مكوّن من عدة مواد غير متجانسة، إلا أن الجزء الأكبر من محتواها هو الركام بنوعيه الخشن والناعم، إذ يشكّل ما يقارب 60–75% من حجمها الكلي.</p>
+          <p>لذلك فإن خواص الركام تؤثر بشكل مباشر وكبير على خصائص الخرسانة الطازجة والمتصلدة.</p>
+          <p>وينقسم الركام إلى ركام ناعم مثل الرمل وركام خشن مثل الحصى أو الحجر المكسر، ويؤدي كل منهما دورًا مهمًا في تحديد مقاومة الخرسانة ومتانتها وقابليتها للتشغيل.</p>
+        </div>
+        <div class="intro-circle-title">
+          <span>المقدمة</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide-intro" data-title="مشكلة الدراسة" data-section="المقدمة" data-slide="2">
+      <div class="slide-safe split-hero">
+        <header class="slide-header"><span class="section-label">01</span><h2>مشكلة الدراسة</h2></header>
+        <div class="aggregate-hero"><div id="donutChart" class="chart ring-chart" role="img" aria-label="نسبة الركام التقريبية من حجم الخرسانة"></div></div>
+        <div class="editorial-list">
+          <p>إن العديد من مواد البناء بما فيها الخرسانة والأسفلت تستخدم الركام كمادة رئيسية، كما أن استعمال الركام في الخرسانة يؤدي إلى خفض تكلفة الإنتاج وزيادة مقاومة الخلطات الخرسانية.</p>
+          <p>يشكل الرمل والركام ما بين 60 إلى 75 بالمائة من حجم الكتلة الخرسانية، ولذلك فإن خصائص الركام تسهم في جعله مادة ضرورية في تشييد وصيانة الطرق والأرصفة ومواقف السيارات ومدارج المطارات وخطوط السكك الحديدية والمباني.</p>
+          <p>مرحلة تصميم معظم مشاريع البناء تحتاج إلى تحليل دقيق لمصدر الركام من حيث النوع والحجم والخواص الفيزيائية والميكانيكية.</p>
+          <p>يؤثر مصدر الركام الخشن بشكل مباشر على مقاومة الخرسانة نتيجة اختلاف خواصه الفيزيائية والميكانيكية، وقد يؤدي عدم أخذه في الاعتبار عند استخدام الركام المحلي إلى تفاوت في مقاومة الخرسانة وعدم تحقيق المقاومة المطلوبة.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="أهمية الدراسة" data-section="المقدمة" data-slide="3">
+      <div class="slide-safe">
+        <header class="slide-header"><span class="section-label">02</span><h2>أهمية الدراسة</h2></header>
+        <div class="cause-diagram">
+          <div><span>تعتبر الخرسانة بأنواعها من أكثر الموضوعات التي تشغل أهمية في مجال الإنشاءات الهندسية والتشييد والبناء، والذي يؤثر بشكل إيجابي على مجال العمارة والاقتصاد للدولة.</span></div>
+          <div><span>تساعد هذه الدراسة على فهم العلاقة بين مصدر الركام الخشن ومقاومة الخرسانة، الأمر الذي يساهم في تحسين تصميم الخلطات الخرسانية واختيار الركام المناسب لتحقيق المتطلبات الهندسية للمشاريع الإنشائية.</span></div>
+          <div><span>تكتسب الدراسة أهمية عملية من خلال دعم استخدام الركام المحلي بعد تقييمه علميًا، مما يقلل من التكاليف الاقتصادية ويحد من المشاكل الناتجة عن استخدام مواد غير مناسبة.</span></div>
+          <div><span>تساهم الدراسة في رفع مستوى الجودة والسلامة في المنشآت الخرسانية.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="الأهداف" data-section="المقدمة" data-slide="4">
+      <div class="slide-safe objectives-layout">
+        <header class="slide-header"><span class="section-label">03</span><h2>الهدف من الدراسة</h2></header>
+        <ol class="number-sequence"><li><span>01</span>تهدف هذه الدراسة إلى دراسة وتحليل تأثير مصدر الركام الخشن على مقاومة الخرسانة.</li><li><span>02</span>تتم الدراسة من خلال مقارنة مقاومة الخرسانة المصنوعة باستخدام ركام خشن من مصادر مختلفة، مع ربط ذلك بالخصائص المخبرية للركام.</li><li><span>03</span>تسعى الدراسة إلى تحديد مدى تأثير الخصائص الفيزيائية والميكانيكية للركام على جودة الخرسانة.</li><li><span>04</span>تساعد النتائج في اختيار المصدر الأنسب لتحقيق المتطلبات الهندسية.</li><li><span>05</span>لا يتم الحكم النهائي على مقاومة ضغط الخرسانة دون نتائج اختبار المكعبات الفعلية.</li></ol>
+        <aside class="thin-warning">لا تدّعِ إثبات مقاومة الضغط دون نتائج اختبار المكعبات.</aside>
+      </div>
+    </section>
+
+    <section class="slide" data-title="فرضيات الدراسة" data-section="المقدمة" data-slide="5">
+      <div class="slide-safe framework-layout">
+        <header class="slide-header"><span class="section-label">04</span><h2>فرضيات الدراسة</h2></header>
+        <div class="framework-column primary-doc"><h3>الفرضيات</h3><dl><dt>1</dt><dd>يختلف تأثير الركام الخشن على مقاومة الخرسانة باختلاف مصدره.</dd><dt>2</dt><dd>تؤدي الخصائص الفيزيائية والميكانيكية للركام الخشن الناتجة عن اختلاف المصدر إلى تفاوت في مقاومة الضغط للخرسانة.</dd><dt>3</dt><dd>يحقق بعض مصادر الركام الخشن مقاومة خرسانية أعلى مقارنة بمصادر أخرى عند استخدام نفس نسب الخلط وظروف المعالجة.</dd></dl></div>
+        <div class="framework-column"><h3>تنبيه علمي</h3><ul><li>هذه الفرضيات تحتاج إلى نتائج ضغط فعلية للتحقق النهائي.</li><li>نتائج التهشيم والصدمية تعطي مؤشرًا على مقاومة الركام فقط.</li><li>لا توجد في فصل النتائج قيم ضغط منشورة للمكعبات.</li></ul></div>
+        <div class="data-note"><b>مراجعة البيانات</b> ورد ترتيب نسبة الخلط في الملف بصيغة قد تتأثر باتجاه الكتابة RTL، لذلك يجب تأكيد ترتيب 1:2:3 أو 3:2:1 من السجل المختبري.</div>
+      </div>
+    </section>
+
+    <section class="slide limits-slide" data-title="حدود الدراسة" data-section="المقدمة" data-slide="6">
+      <div class="slide-safe limits-layout">
+        <div class="limits-images">
+          <figure><img class="circular-image" src="assets/images/temporal-limits-clock.png" alt="الحدود الزمانية"><span>1</span></figure>
+          <figure><img class="circular-image" src="assets/images/image7.png" alt="صورة ركام"><span>2</span></figure>
+        </div>
+        <div class="limits-copy">
+          <header class="slide-header"><span class="section-label">05</span><h2>حدود الدراسة</h2></header>
+          <h3>حدود زمنية:</h3>
+          <p>زمن الدراسة من شهر نوفمبر 2025 إلى شهر يوليو 2026م.</p>
+          <h3>حدود مكانية:</h3>
+          <p>مكان الدراسة في مدينة بنغازي، وتستخدم جميع المواد منها ما عدا مادة الركام الخشن حيث يتغير مصدره.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide methodology-detail" data-title="المنهجية المتبعة" data-section="المنهجية" data-slide="7">
+      <div class="slide-safe reference-text-layout">
+        <header class="slide-header"><span class="section-label">06</span><h2>المنهجية المتبعة لتحقيق الهدف</h2></header>
+        <div class="gradient-text-panel">
+          <p>اعتمدت هذه الدراسة على المنهج التجريبي لدراسة تأثير مصدر الركام الخشن على مقاومة الخرسانة.</p>
+          <p>حيث سيتم اختيار عدة مصادر مختلفة للركام الخشن، ويتم فحص خواصها الفيزيائية والميكانيكية، مثل التدرج الحبيبي ونسبة الامتصاص والكثافة النوعية ومساحة السطح والوزن النوعي والصدمية والتهشيم.</p>
+          <p>وتم تقييم مقاومة الخرسانة من خلال اختبار مقاومة الضغط فقط، وتحت ظروف معالجة مختبرية محددة ولفترات زمنية معينة.</p>
+          <p class="scientific-inline">تنبيه: فصل النتائج المتاح لا يحتوي على نتائج ضغط منشورة، لذلك تعرض الشرائح نتائج الركام فقط ولا تخترع نتائج خرسانية.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide theory-slide" data-title="تعريف الركام وأنواعه" data-section="الإطار النظري" data-slide="8">
+      <div class="slide-safe theory-layout-a">
+        <div class="gradient-panel theory-panel">
+          <h2>الركام</h2>
+          <p>يعرف الركام بأنه الحبيبات الصلبة من الرمل والحصى والزلط وكسر الصخور الكبيرة، ويتم وضعه في الخرسانة باعتباره مادة مالئة رخيصة الثمن.</p>
+          <p>وله فائدة في مساعدة الخرسانة على مقاومة الأحمال والبري والحرارة وعوامل الاحتكاك وحدوث أي بلل أو جفاف.</p>
+          <p>وله وظيفة مهمة جدًا في تقليل التغيرات الحجمية التي تحدث داخل الخرسانة والتي تنتج من الأسمنت.</p>
+        </div>
+        <div class="black-info-panel">
+          <h2>أنواع الركام</h2>
+          <p>أنواع الركام متعددة على حسب المصادر، الملمس، المقاس، الشكل، امتصاصه للمياه، التدرج الحبيبي، الخواص الكيميائية، الخصائص الميكانيكية، مقاومته للتآكل والبري، الوزن، التمدد الحراري، والحرارة النوعية.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide texture-slide" data-title="تقسيم الركام حسب الملمس" data-section="الإطار النظري" data-slide="9">
+      <div class="slide-safe numbered-reference">
+        <header class="slide-header"><span class="section-label">Texture</span><h2>تقسيم الركام حسب الملمس</h2></header>
+        <ol class="orange-number-list"><li><b>01</b><span>الركام الناعم: مثال عليه الزلط والرمل.</span></li><li><b>02</b><span>ركام حبيبي: مثال عليه الحجر الرملي.</span></li><li><b>03</b><span>الركام الخشن: مثال عليه البازلت.</span></li><li><b>04</b><span>ركام زجاجي: مثال عليه الحجر الصوان الأسود.</span></li><li><b>05</b><span>ركام بلوري: مثال عليه الجرانيت.</span></li><li><b>06</b><span>ركام معشش: مثال عليه الحجر الخفاف.</span></li></ol>
+      </div>
+    </section>
+
+    <section class="slide sizes-slide" data-title="تقسيم مقاسات الركام" data-section="الإطار النظري" data-slide="10">
+      <div class="slide-safe reference-columns">
+        <header class="slide-header"><span class="section-label">Aggregate Sizes</span><h2>تقسيم مقاسات الركام ثلاثة أنواع رئيسية</h2></header>
+        <div><h3>الركام الصغير</h3><p>هو الركام الذي يتكون من حبيبات صغيرة الحجم بحيث يمكن أن تمر من المنخل القياسي 4.75 مم، ومثال على ذلك الرمل.</p></div>
+        <div><h3>الركام الكبير</h3><p>هو الركام الذي تتراوح حجم حبيباته ما بين 4.75 مم إلى 150 مم، ومثال على ذلك الزلط والسن.</p></div>
+        <div><h3>الركام الشامل</h3><p>هو عبارة عن مزيج ما بين كل من الركام الصغير والركام الكبير بنسب محددة حسب احتياج الخلطة الخرسانية.</p></div>
+      </div>
+    </section>
+
+    <section class="slide shape-absorption-slide" data-title="شكل الحبيبات وامتصاص الماء" data-section="الإطار النظري" data-slide="11">
+      <div class="slide-safe dual-list-layout">
+        <div>
+          <h2>تصنيف الركام من حيث شكل الحبيبات</h2>
+          <ol class="orange-number-list compact"><li><b>01</b><span>الركام المستدير</span></li><li><b>02</b><span>الركام الزاوي</span></li><li><b>03</b><span>الركام غير المنتظم</span></li><li><b>04</b><span>الركام المبطط أو المفلطح والركام العصوي</span></li></ol>
+        </div>
+        <div>
+          <h2>تقسيم الركام من حيث امتصاص الماء</h2>
+          <ol class="orange-number-list compact"><li><b>01</b><span>ركام مجفف بالفرن</span></li><li><b>02</b><span>ركام مجفف بالهواء</span></li><li><b>03</b><span>ركام مشبع بالماء</span></li><li><b>04</b><span>ركام رطب</span></li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide concrete-slide" data-title="الخرسانة" data-section="الإطار النظري" data-slide="12">
+      <div class="slide-safe theory-layout-a">
+        <div class="gradient-panel theory-panel"><h2>الخرسانة</h2><p>تتكون الخرسانة من خلط مجموعة من المواد بنسب مختلفة وهي الركام والإسمنت والماء، وأحيانًا تضاف مواد أخرى تعرف بالإضافات لتحسين خواص معينة في الخرسانة.</p></div>
+        <div class="black-info-panel"><h2>خصائص الخرسانة</h2><p>إن للخرسانة العديد من الخصائص التي تتحدد وفقًا لخصائص المكونات الداخلة في تصنيعها وهي الماء والأسمنت والركام ونسبة الخلط بينها.</p><ol class="orange-number-list compact"><li><b>01</b><span>قوة تحمل الخرسانة للضغط</span></li><li><b>02</b><span>قوة الشد للخرسانة</span></li><li><b>03</b><span>النفاذية</span></li><li><b>04</b><span>القابلية التشغيلية للخرسانة</span></li></ol></div>
+      </div>
+    </section>
+
+    <section class="slide slide-materials" data-title="المواد المستخدمة" data-section="المنهجية" data-slide="13">
+      <div class="slide-safe">
+        <header class="slide-header"><span class="section-label">مواد الخلطة</span><h2>المواد المستخدمة</h2></header>
+        <div class="material-layers">
+          <figure><img src="assets/images/cement-lcc.png" alt="أسمنت بورتلاندي عادي" data-fallback="الأسمنت"><figcaption><b>الأسمنت</b><span>أسمنت بورتلاندي عادي.</span></figcaption></figure>
+          <figure><img src="assets/images/drinking-water.png" alt="ماء صالح للشرب" data-fallback="الماء"><figcaption><b>الماء</b><span>ماء صالح للشرب.</span></figcaption></figure>
+          <figure><img src="assets/images/lab-ajdabiya-sample.png" alt="عينة ركام أجدابيا الخشن" data-fallback="ركام أجدابيا"><figcaption><b>ركام أجدابيا</b><span>عينة ركام خشن موثقة قبل الاختبارات.</span></figcaption></figure>
+          <figure><img src="assets/images/lab-bayda-sample.png" alt="عينة ركام البيضاء الخشن" data-fallback="ركام البيضاء"><figcaption><b>ركام البيضاء</b><span>عينة ركام خشن محفوظة وموسومة.</span></figcaption></figure>
+          <figure><img src="assets/images/lab-abyar-sample.png" alt="عينة ركام الأبيار الخشن" data-fallback="ركام الأبيار"><figcaption><b>ركام الأبيار</b><span>عينة ركام خشن محفوظة وموسومة.</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide practical-side" data-title="الجانب العملي الأول" data-section="المنهجية" data-slide="14">
+      <div class="slide-safe practical-layout">
+        <header class="slide-header"><span class="section-label">Practical Side</span><h2>الجانب العملي الأول</h2></header>
+        <div class="black-info-panel"><p>هذه الاختبارات تم إجراؤها على ركام أجدابيا، البيضاء، والأبيار، بهدف تحديد الخواص الفيزيائية اللازمة لتصميم الخلطات الخرسانية والمقارنة بين خواص الركام المستخدم.</p></div>
+        <div class="gradient-panel tests-panel"><h3>الاختبارات الخاصة بالتعرف على خواص الأنواع المستخدمة من الركام:</h3><ul><li>اختبارات التدرج الحبيبي للركام بنوعيه الناعم والخشن.</li><li>اختبار الوزن النوعي للركام الخشن.</li><li>اختبار الوزن النوعي للركام الناعم.</li><li>اختبار تعيين النسبة المئوية للامتصاص للركام الخشن.</li><li>اختبار تعيين النسبة المئوية للامتصاص للركام الناعم.</li><li>اختبار التهشيم للركام الخشن.</li><li>اختبار الصدمية للركام الخشن.</li></ul></div>
+      </div>
+    </section>
+
+    <section class="slide lab-gallery-slide" data-title="صور من الجانب العملي" data-section="المنهجية" data-slide="15">
+      <div class="slide-safe lab-gallery-layout">
+        <header class="slide-header"><span class="section-label">توثيق مختبري</span><h2>صور من الجانب العملي</h2></header>
+        <div class="lab-gallery">
+          <figure><img src="assets/images/lab-ajdabiya-sample.png" alt="عينة ركام أجدابيا"><figcaption>عينة أجدابيا</figcaption></figure>
+          <figure><img src="assets/images/lab-abyar-sample.png" alt="عينة ركام الأبيار"><figcaption>عينة الأبيار</figcaption></figure>
+          <figure><img src="assets/images/lab-bayda-sample.png" alt="عينة ركام البيضاء"><figcaption>عينة البيضاء</figcaption></figure>
+          <figure><img src="assets/images/lab-sieves-test.png" alt="اختبار المناخل للركام"><figcaption>اختبار المناخل</figcaption></figure>
+          <figure><img src="assets/images/lab-oven-drying.png" alt="تجفيف العينات في الفرن"><figcaption>تجفيف العينات</figcaption></figure>
+          <figure><img src="assets/images/lab-washing-sample.png" alt="غسل عينة الركام بالماء"><figcaption>غسل العينة</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide equipment-slide" data-title="الأجهزة المستخدمة" data-section="المنهجية" data-slide="15">
+      <div class="slide-safe equipment-layout">
+        <h2>الأجهزة المستخدمة في الاختبارات</h2>
+        <div class="equipment-grid">
+          <figure><img src="assets/images/image10.jpeg" alt="جهاز الصدمية"><figcaption>جهاز الصدمية</figcaption></figure>
+          <figure><img src="assets/images/image7.png" alt="جهاز التهشيم"><figcaption>جهاز التهشيم</figcaption></figure>
+          <figure><img src="assets/images/image9.png" alt="المناخل القياسية"><figcaption>المناخل القياسية</figcaption></figure>
+          <figure><img src="assets/images/image4.png" alt="هزاز ميكانيكي"><figcaption>هزاز ميكانيكي</figcaption></figure>
+          <figure><img src="assets/images/image5.png" alt="ميزان حساس"><figcaption>ميزان حساس</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="منهجية العمل التجريبي" data-section="المنهجية" data-slide="16">
+      <div class="slide-safe workflow-slide">
+        <header class="slide-header"><span class="section-label">المسار المختبري</span><h2>منهجية العمل التجريبي</h2></header>
+        <div class="lab-workflow" id="workflowTimeline"></div>
+        <p class="hint">انقر على أي مرحلة لعرض هدف الاختبار والأداة والنتيجة الناتجة.</p>
+      </div>
+    </section>
+
+    <section class="slide" data-title="الاختبارات والمواصفات" data-section="المنهجية" data-slide="8">
+      <div class="slide-safe spec-slide"><header class="slide-header"><span class="section-label">Technical Specification</span><h2>الاختبارات والمواصفات</h2></header><div class="spec-sheet" id="standardsTable"></div></div>
+    </section>
+
+    <section class="slide slide-gradation" data-title="مقارنة التدرج الحبيبي" data-section="النتائج" data-slide="9">
+      <div class="slide-safe results-split">
+        <header class="slide-header"><span class="section-label">Key Result</span><h2>مقارنة التدرج الحبيبي Gradation</h2></header>
+        <div class="chart-panel large"><div class="legend" id="gradationLegend"></div><div id="gradationChart" class="chart" role="img" aria-label="منحنى التدرج الحبيبي"></div></div>
+        <aside class="chart-reading"><h3>قراءة الرسم</h3><p>البيضاء تُظهر مرورًا أعلى عند منخل 10 mm مقارنة بالمصدرين الآخرين.</p><p>أجدابيا والأبيار أكثر تقاربًا عند 20 mm، مع انخفاض واضح عند 10 mm.</p><button class="text-btn toggle-table" data-target="gradationTable">جدول البيانات</button><button class="text-btn export-chart" data-chart="gradationChart">تصدير PNG</button></aside>
+        <div id="gradationTable" class="table-drawer" hidden></div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="معامل النعومة" data-section="النتائج" data-slide="10">
+      <div class="slide-safe horizontal-chart-slide"><header class="slide-header"><span class="section-label">Fineness Modulus</span><h2>معامل النعومة</h2></header><div id="finenessChart" class="chart horizontal-chart" role="img" aria-label="مقارنة معامل النعومة"></div><p class="academic-note">يجب تفسير معامل النعومة مع التدرج الحبيبي ومجموعة المناخل المستخدمة، وليس منفردًا.</p></div>
+    </section>
+
+    <section class="slide cinematic-result" data-title="مقارنة التهشيم" data-section="النتائج" data-slide="14"><div class="slide-safe result-cinema"><header class="slide-header"><span class="section-label">Crushing Value</span><h2>مقارنة قيمة التهشيم</h2></header><div id="crushingChart" class="chart cinematic-chart" role="img" aria-label="مقارنة قيمة التهشيم"></div><div class="result-statement"><b>الأقل أفضل في هذا الاختبار</b><span>أجدابيا الأفضل في مقاومة التهشيم ضمن العينات المختبرة.</span><small>لا يعني ذلك تفوق مقاومة ضغط الخرسانة.</small></div></div></section>
+    <section class="slide" data-title="مقارنة الصدمية" data-section="النتائج" data-slide="15"><div class="slide-safe podium-layout"><header class="slide-header"><span class="section-label">Impact Value</span><h2>مقارنة قيمة الصدمية</h2></header><div id="impactChart" class="chart podium-chart" role="img" aria-label="ترتيب قيم الصدمية"></div><p class="academic-note">انخفاض القيمة يعني مقاومة أفضل للأحمال المفاجئة.</p></div></section>
+
+    <section class="slide matrix-slide" data-title="جدول المقارنة الكامل" data-section="النتائج" data-slide="16"><div class="slide-safe"><header class="slide-header"><span class="section-label">Comparison Matrix</span><h2>جدول المقارنة الكامل</h2></header><div id="comparisonTable" class="matrix-wrap"></div><p class="academic-note">لا يتم تمييز معامل النعومة كقيمة أفضل عالميًا. في التهشيم والصدمية: الأقل أفضل.</p></div></section>
+
+    <section class="slide" data-title="تفسير النتائج" data-section="المناقشة" data-slide="17"><div class="slide-safe"><header class="slide-header"><span class="section-label">Evidence → Interpretation</span><h2>تفسير النتائج</h2></header><div class="evidence-grid"><div><b>أقل تهشيم وصدمية</b><span>→</span><p>مقاومة ميكانيكية أفضل للركام ضمن الاختبارات المتاحة.</p></div><div><b>امتصاص البيضاء أقل من الأبيار</b><span>→</span><p>مسامية أقل نسبيًا وفق القيم المتوفرة.</p></div><div><b>مواد ناعمة منخفضة في الأبيار</b><span>→</span><p>مؤشر جيد لنظافة العينة حسب البيانات المتاحة.</p></div><div><b>غياب نتائج الضغط</b><span>→</span><p>لا يمكن ترتيب الخرسانة حسب مقاومة الضغط.</p></div></div><div class="scientific-quote">نتائج اختبارات الركام لا تعوض اختبار مقاومة ضغط الخرسانة.</div></div></section>
+    <section class="slide data-quality" data-title="حدود النتائج وجودة البيانات" data-section="المناقشة" data-slide="18"><div class="slide-safe"><header class="slide-header"><span class="section-label">Research Integrity</span><h2>حدود النتائج وجودة البيانات</h2></header><ol class="quality-list"><li>لا توجد نتائج ضغط عند 14 أو 28 يومًا في فصل النتائج.</li><li>لا توجد نتائج واضحة لاختبار الهبوط.</li><li>بعض الخصائص الفيزيائية لأجدابيا غير متوفرة.</li><li>توجد مشكلة حسابية في المواد الناعمة للبيضاء.</li><li>توجد احتمالية غموض في ترتيب نسبة الخلط بسبب RTL.</li><li>نتائج الركام وحدها لا تثبت تأثير المصدر على مقاومة الضغط.</li></ol><p class="integrity-footer">عرض هذه الملاحظات يعزز دقة البحث ولا يقلل من قيمته.</p></div></section>
+    <section class="slide" data-title="الخلاصة" data-section="المناقشة" data-slide="19"><div class="slide-safe conclusion-slide"><header class="slide-header"><span class="section-label">Conclusion</span><h2>الخلاصة</h2></header><div class="conclusion-three"><article><span>01</span><b>تأثير واضح للمصدر في خصائص الركام</b></article><article><span>02</span><b>تفوق أجدابيا في التهشيم والصدمية</b></article><article><span>03</span><b>الحاجة إلى نتائج ضغط فعلية للحكم على الخرسانة</b></article></div><div class="engineering-equation">خصائص الركام <span>+</span> اختبار الخرسانة <span>=</span> قرار هندسي موثوق</div></div></section>
+    <section class="slide closing-slide" data-title="التوصيات والختام" data-section="المناقشة" data-slide="20"><div class="slide-safe closing-layout"><header class="slide-header"><span class="section-label">Recommendations</span><h2>التوصيات</h2></header><div class="roadmap"><div><b>Complete Tests</b><p>استكمال اختبارات الضغط عند 7 و14 و28 يومًا.</p></div><div><b>Repeat Samples</b><p>إجراء ثلاثة تكرارات على الأقل لكل اختبار.</p></div><div><b>Validate Data</b><p>مراجعة نتيجة البيضاء واستكمال بيانات أجدابيا.</p></div><div><b>Future Research</b><p>دراسة الشد والانحناء والمتانة والنفاذية والانكماش.</p></div></div><div class="thanks"><h3>شكرًا لحسن استماعكم</h3><p>الأسئلة والمناقشة</p></div></div></section>
+
+    <section class="slide appendix" data-title="ملحق: تدرج الأبيار" data-section="الملحق" data-slide="21"><div class="slide-safe"><header class="slide-header"><span class="section-label">APPENDIX / الملحق</span><h2>تدرج الأبيار</h2></header><div id="abyarsGradationTable" class="table-wrap"></div><p class="source-note">المصدر: نتائج المشروع – الفصل الرابع.</p></div></section>
+    <section class="slide appendix" data-title="ملحق: تدرج البيضاء" data-section="الملحق" data-slide="22"><div class="slide-safe"><header class="slide-header"><span class="section-label">APPENDIX / الملحق</span><h2>تدرج البيضاء</h2></header><div id="baydaGradationTable" class="table-wrap"></div><p class="source-note">المصدر: نتائج المشروع – الفصل الرابع. تم التعامل مع 200 كرقم منخل وليس 200 mm.</p></div></section>
+    <section class="slide appendix" data-title="ملحق: تدرج أجدابيا" data-section="الملحق" data-slide="23"><div class="slide-safe"><header class="slide-header"><span class="section-label">APPENDIX / الملحق</span><h2>تدرج أجدابيا</h2></header><div id="ajdabiyaGradationTable" class="table-wrap"></div><p class="source-note">المصدر: نتائج المشروع – الفصل الرابع. تم التعامل مع 200 كرقم منخل وليس 200 mm.</p></div></section>
+    <section class="slide appendix" data-title="ملحق: شط البدين" data-section="الملحق" data-slide="24"><div class="slide-safe"><header class="slide-header"><span class="section-label">APPENDIX / الملحق</span><h2>ركام شط البدين الناعم</h2></header><div class="appendix-split"><div class="doc-callout"><p>وزن العينة الكلي: 500 g</p><p>معامل النعومة: 2.46</p><p>مدى حجم الحبيبات: 0.075–0.850 mm</p></div><div id="fineAggregateTable" class="table-wrap"></div></div><p class="source-note">المصدر: نتائج المشروع – الفصل الرابع.</p></div></section>
+    <section class="slide appendix" data-title="ملحق: أوزان التهشيم والصدمية" data-section="الملحق" data-slide="25"><div class="slide-safe"><header class="slide-header"><span class="section-label">APPENDIX / الملحق</span><h2>أوزان التهشيم والصدمية</h2></header><div class="appendix-split"><div id="crushingWeights" class="table-wrap"></div><div id="impactWeights" class="table-wrap"></div></div><details class="doc-callout"><summary>شرح الحساب</summary><p>النتيجة = (W1 − W2) ÷ W1 × 100. يتم التحقق من الحسابات في JavaScript عند تحميل الصفحة.</p></details></div></section>
+    <section class="slide appendix" data-title="ملحق: المعادلات" data-section="الملحق" data-slide="26"><div class="slide-safe"><header class="slide-header"><span class="section-label">APPENDIX / الملحق</span><h2>المعادلات</h2></header><div class="equation-grid"><article><b>المواد الناعمة</b><span>(A − B) ÷ A × 100</span></article><article><b>الامتصاص</b><span>(A − D) ÷ D × 100</span></article><article><b>التهشيم</b><span>(W1 − W2) ÷ W1 × 100</span></article><article><b>الصدمية</b><span>(W1 − W2) ÷ W1 × 100</span></article></div><p class="doc-callout">A: وزن العينة قبل الغسل أو بحالة SSD حسب الاختبار. B: وزن العينة بعد الغسل والتجفيف. D: وزن العينة الجافة بالفرن. W1: الوزن الكلي قبل الاختبار. W2: الوزن المتبقي بعد الاختبار.</p></div></section>
+    <section class="slide appendix" data-title="المراجع" data-section="الملحق" data-slide="27"><div class="slide-safe"><header class="slide-header"><span class="section-label">APPENDIX / الملحق</span><h2>المراجع</h2></header><ol class="references"><li>فرج سالم حرشة، أبوشعفة أحمد عبدالصمد، 2024، دراسة تأثير تغير نسبة الماء إلى الأسمنت ونسبة الركام للأسمنت على مقاومة الضغط للخرسانة، المجلة الدولية للعلوم والتقنية، العدد 33، المجلد 2.</li><li>إيناس فوزي عبد الكريم حراحشة، 2023، تأثير صفات الركام على خواص الخرسانة، jaspss، الإصدار 5.</li></ol><p class="academic-note">لم تُضف مراجع خارجية أو حقول ببليوغرافية غير مكتملة خارج ما ظهر بوضوح في الملف.</p></div></section>
+  </main>
+
+  <div class="presenter-frame" id="presenterFrame">
+    <div class="counter"><span id="currentSlide">1</span>/<span id="totalSlides">34</span></div>
+    <div class="footer-title" id="footerTitle"></div>
+  </div>
+  <div class="controls" id="controls" aria-label="أدوات التحكم"><button id="prevBtn" title="السابق" aria-label="السابق">‹</button><button id="nextBtn" title="التالي" aria-label="التالي">›</button><button id="overviewBtn" title="عرض الشرائح" aria-label="عرض الشرائح">O</button><button id="notesBtn" title="الملاحظات" aria-label="الملاحظات">N</button><button id="themeBtn" title="وضع القراءة" aria-label="تبديل الوضع">◐</button><button id="fullscreenBtn" title="ملء الشاشة" aria-label="ملء الشاشة">⛶</button><button id="printBtn" title="طباعة PDF" aria-label="طباعة PDF">PDF</button></div>
+  <div class="tooltip" id="tooltip"></div>
+  <div class="start-screen show" id="startScreen"><div class="start-content"><p class="eyebrow">Civil Engineering Defense</p><h1 data-config="title">تأثير مصدر الركام الخشن على مقاومة الخرسانة للانضغاط</h1><p id="startStudents"></p><div><button class="primary" id="startBtn">بدء العرض</button><button class="ghost" data-jump="28">فتح الملحق</button><button class="ghost" data-jump="19">الانتقال إلى النتائج</button></div></div></div>
+  <div class="overview" id="overview"><div class="overview-head"><h2>عرض الشرائح</h2><button id="closeOverview">إغلاق</button></div><div class="overview-grid" id="overviewGrid"></div></div>
+  <aside class="notes-panel" id="notesPanel" aria-label="ملاحظات المتحدث"></aside>
+  <div class="modal" id="modal"><div class="modal-box" id="modalBox"></div></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/notes.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/presentation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

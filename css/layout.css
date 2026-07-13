@@ -1,0 +1,33 @@
+.stage { position: fixed; inset: 0; overflow: hidden; background: var(--black); }
+.slide { position: absolute; inset: 0; width: 100vw; height: 100vh; overflow: hidden; display: none; background: var(--black); color: var(--white); }
+.slide.active { display: block; animation: slideReveal 520ms ease both; }
+.slide::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 100% 15%, rgba(249,120,10,.16), transparent 24%), radial-gradient(circle at -10% 82%, rgba(122,49,8,.45), transparent 34%); }
+.slide::after {
+  content: attr(data-slide);
+  position: absolute;
+  z-index: 12;
+  left: auto;
+  right: 5.2vw;
+  top: auto;
+  bottom: 4.2vh;
+  min-width: clamp(4rem, 5.4vw, 6rem);
+  padding: .18rem .45rem .32rem;
+  border-left: 0;
+  border-right: 7px solid var(--orange);
+  font: 900 clamp(2.9rem, 4.45vw, 4.9rem)/.92 var(--font-head);
+  color: var(--white);
+  text-align: right;
+  text-shadow: 0 5px 22px rgba(0, 0, 0, .9);
+  pointer-events: none;
+}
+.slide-safe { position: relative; z-index: 2; width: 88vw; height: 86vh; margin: 7vh auto; display: grid; gap: clamp(1rem, 1.6vw, 2rem); }
+.slide-header { align-self: start; display: grid; gap: .4rem; padding-inline-end: min(8vw, 120px); position: relative; }
+.slide-header::after { content: ""; position: absolute; inset-inline-end: min(5.2vw, 82px); top: .2rem; width: 7px; height: clamp(4.6rem, 7vw, 8rem); border-radius: 99px; background: linear-gradient(180deg, var(--orange), transparent); }
+.slide-header h2 { margin: 0; font-family: var(--font-head); font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 1.08; letter-spacing: -.04em; color: var(--white); text-align: right; }
+.section-label, .eyebrow { color: var(--orange); font-size: clamp(.85rem, 1vw, 1rem); letter-spacing: .08em; text-transform: uppercase; font-weight: 900; }
+.top-progress { position: fixed; z-index: 90; inset: 0 0 auto; height: 3px; background: rgba(255,255,255,.08); }
+.top-progress span { display: block; height: 100%; width: 0; background: var(--orange); transition: width 320ms ease; }
+.presenter-frame { position: fixed; z-index: 60; inset-inline: 5.8vw; bottom: 2.4vh; display: flex; align-items: center; justify-content: space-between; color: rgba(255,255,255,.62); pointer-events: none; font-size: .9rem; }
+.footer-title { max-width: 55vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.counter { font-weight: 900; color: var(--orange); }
+.slide-number-line { position: absolute; inset-inline-end: 11vw; top: 13.2vh; width: 7px; height: 11vh; background: var(--orange); border-radius: 99px; }

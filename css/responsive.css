@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+  .slide-safe { width: 90vw; }
+  .cause-diagram { grid-template-columns: repeat(4, 1fr); gap: .75rem; }
+  .cause-diagram i { display: none; }
+  .cause-diagram div { min-height: 150px; }
+  .material-layers, .roadmap, .equation-grid, .lab-gallery { grid-template-columns: repeat(2, 1fr); }
+  .lab-workflow { grid-template-columns: repeat(5, 1fr); margin-top: 3vh; }
+  .lab-workflow::before { display: none; }
+}
+
+@media (max-width: 900px) {
+  body { overflow: hidden; }
+  .orientation-notice { display: block; }
+  .slide { overflow-y: auto; }
+  .slide-safe { height: auto; min-height: 88vh; }
+  .cover-layout, .split-hero, .objectives-layout, .framework-layout, .results-split, .source-results, .result-cinema, .appendix-split { grid-template-columns: 1fr; }
+  .concrete-slide .theory-layout-a { grid-template-columns: 1fr; }
+  .concrete-slide .orange-number-list.compact { grid-template-columns: 1fr; }
+  .concrete-slide .theory-panel, .concrete-slide .black-info-panel { min-height: auto; }
+  .shape-absorption-slide .dual-list-layout { grid-template-columns: 1fr; }
+  .shape-absorption-slide .dual-list-layout > div { min-height: auto; }
+  .shape-absorption-slide .orange-number-list.compact { grid-template-columns: 1fr; }
+  .sizes-slide .slide-header { max-width: none; }
+  .sizes-slide .reference-columns > div { height: auto; }
+  .cover-media { min-height: 34vh; }
+  .research-orbit, .bottom-statements, .quality-list, .conclusion-three, .evidence-grid { grid-template-columns: 1fr; }
+  .central-claim { position: static; transform: none; width: auto; aspect-ratio: auto; border-radius: 24px; padding: 1.2rem; }
+  .research-orbit::before, .research-orbit::after { display: none; }
+  .material-layers, .lab-gallery { grid-template-columns: 1fr; }
+  .material-layers figure { min-height: 280px; }
+  .notes-panel { width: min(92vw, 420px); }
+  .controls { max-width: 94vw; overflow-x: auto; }
+}

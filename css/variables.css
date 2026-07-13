@@ -1,0 +1,29 @@
+:root {
+  --black: #050505;
+  --black-soft: #0A0A0A;
+  --orange: #F9780A;
+  --orange-dark: #A63F00;
+  --brown-dark: #4A1D05;
+  --brown-mid: #7A3108;
+  --white: #FFFFFF;
+  --gray: #D8D8D8;
+  --ink: var(--white);
+  --muted: var(--gray);
+  --surface: rgba(255, 255, 255, 0.045);
+  --surface-strong: rgba(249, 120, 10, 0.13);
+  --line: rgba(249, 120, 10, 0.55);
+  --shadow: 0 30px 90px rgba(0, 0, 0, 0.62);
+  --panel-gradient: linear-gradient(90deg, #8A3406 0%, #4A1D05 45%, #090909 100%);
+  --hot-gradient: linear-gradient(90deg, #F9780A 0%, #6A2605 45%, #050505 100%);
+  --font-body: "Tajawal", Arial, sans-serif;
+  --font-head: "Cairo", "Noto Kufi Arabic", "Tajawal", Arial, sans-serif;
+}
+
+body.document-mode {
+  --ink: var(--white);
+  --muted: var(--gray);
+  --surface: rgba(255, 255, 255, 0.045);
+  --surface-strong: rgba(249, 120, 10, 0.13);
+  --line: rgba(249, 120, 10, 0.55);
+  --shadow: 0 30px 90px rgba(0, 0, 0, 0.62);
+}
