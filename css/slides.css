@@ -411,6 +411,18 @@
   direction: ltr;
   grid-template-columns: 1fr 86px;
 }
+.texture-slide .slide-header {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(1120px, 100%);
+  padding-inline: 0;
+  text-align: center;
+}
+.texture-slide .slide-header h2,
+.texture-slide .section-label {
+  justify-self: center;
+  text-align: center;
+}
 .texture-slide .orange-number-list li b {
   grid-column: 2;
   justify-self: end;
