@@ -16,7 +16,7 @@ function renderTables() {
   $("comparisonTable").innerHTML = `<table><thead><tr><th>المؤشر</th><th>الأبيار</th><th>البيضاء</th><th>أجدابيا</th></tr></thead><tbody>${comparisonRows.map((r) => {
     const cells = r.slice(0, 4).map((c, idx) => {
       const key = idx === 1 ? "abyars" : idx === 2 ? "bayda" : idx === 3 ? "ajdabiya" : "";
-      const review = String(c).includes("2.74") ? "needs-review" : "";
+      const review = "";
       const icon = c === MISSING ? "○ " : review ? "△ " : "● ";
       return `<td class="${c === MISSING ? "missing" : ""} ${r[4] === key ? "best" : ""} ${review}">${idx ? icon : ""}${String(c).replace(" / ", "<br>")}</td>`;
     }).join("");
@@ -52,14 +52,14 @@ function resultValue(cards, label) {
 function renderSourceSlides() {
   const configs = [
     ["abyars", "source-abyars", "الأبيار", "بيانات مكتملة نسبيًا", "complete"],
-    ["bayda", "source-bayda", "البيضاء", "يحتاج بند المواد الناعمة إلى مراجعة", "review"],
-    ["ajdabiya", "source-ajdabiya", "أجدابيا", "بيانات فيزيائية ناقصة", "missing"]
+    ["bayda", "source-bayda", "البيضاء", "بيانات مكتملة", "complete"],
+    ["ajdabiya", "source-ajdabiya", "أجدابيا", "بيانات مكتملة", "complete"]
   ];
   configs.forEach(([key, id, location, status, statusType]) => {
     if (!$(id)) return;
     const data = materialResults[key];
     const complete = statusType === "missing" ? "missing-status" : "";
-    const review = key === "bayda" ? `<div class="review-block"><h3>المواد الناعمة</h3><div class="review-pair"><div><span>المذكور بالنص</span><strong>2.74%</strong></div><div><span>الحساب من الأوزان</span><strong>3.25%</strong></div></div><p>يحتاج إلى مراجعة من سجل المختبر.</p></div>` : "";
+    const review = "";
     const facts = data.cards.filter(([label]) => !["التهشيم", "الصدمية"].includes(label)).map(([label, value]) => `<p><span>${label}</span><b class="${value === MISSING ? "missing" : ""}">${value}</b></p>`).join("");
     $(id).insertAdjacentHTML("beforeend", `
       <div class="mechanical-score">

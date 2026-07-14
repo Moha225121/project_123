@@ -27,7 +27,7 @@ function closeModal() {
 function handleImageFallbacks() {
   document.querySelectorAll("img").forEach((img) => {
     img.addEventListener("error", () => {
-      const label = img.dataset.fallback || "صورة غير متوفرة";
+      const label = img.dataset.fallback || "صورة توضيحية";
       console.warn(`Missing image: ${img.getAttribute("src")}`);
       const ph = document.createElement("div");
       ph.className = "image-fallback";

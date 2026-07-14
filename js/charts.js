@@ -114,19 +114,19 @@ function renderGradation() {
 function renderHorizontalBars(containerId, data, opts = {}) {
   renderSvg(containerId, "0 0 1040 560", (svg, c) => {
     const max = opts.max || Math.max(...data.values) * 1.15;
-    const x = 250;
+    const x = 410;
     const y = 86;
-    const w = 640;
+    const w = 490;
     const row = 88;
     const colors = opts.colors || data.values.map(() => "#87939D");
     data.values.forEach((v, i) => {
       const yy = y + i * row;
-      text(svg, data.labels[i], { x: x - 34, y: yy + 32, "text-anchor": "end", "font-size": 32, "font-weight": 900, fill: "#FFFFFF", stroke: "#050505", "stroke-width": 3, "paint-order": "stroke" });
       svg.appendChild(svgEl("rect", { x, y: yy, width: w, height: 34, rx: 17, fill: "rgba(135,147,157,.25)" }));
       const bw = (v / max) * w;
       const bar = svgEl("rect", { x, y: yy, width: bw, height: 34, rx: 17, fill: colors[i] });
       addTooltipTarget(bar, `${data.labels[i]}: ${v.toFixed(2)}${data.unit || ""}`);
       svg.appendChild(bar);
+      text(svg, data.labels[i], { x: x - 150, y: yy + 32, "text-anchor": "middle", "font-size": 32, "font-weight": 900, fill: "#FFFFFF", stroke: "#050505", "stroke-width": 4, "paint-order": "stroke" });
       text(svg, `${v.toFixed(2)}${data.unit || ""}`, { x: x + Math.max(18, bw - 8), y: yy + 27, "text-anchor": "end", "font-size": 28, "font-weight": 900, fill: "#FFFFFF", stroke: "#050505", "stroke-width": 3, "paint-order": "stroke" });
     });
     if (opts.reference) {
